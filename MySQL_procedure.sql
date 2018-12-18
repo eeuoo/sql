@@ -39,6 +39,9 @@ DELIMITER ;
 call sp_subject_name_cnt_avg ( '국어' ) ;
 
 
+select id, name from Student where id < 3
+union
+select name, id from Student where id < 5;
 
 
 
